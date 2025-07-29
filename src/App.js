@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Banner from './components/Banner';
+import Intro from './components/Intro';
+import RapidFire from './components/RapidFire';
+import Skills from './components/Skills';
+import GitHubStats from './components/GitHubStats';
+import LanguageChart from './components/LanguageChart';
+import Support from './components/Support';
+import FooterShowcase from './components/FooterShowcase';
+import ProjectsGrid from './components/ProjectsGrid';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="p-4 max-w-6xl mx-auto space-y-6 text-sm">
+            <Banner />
+            <Intro />
+            <RapidFire />
+            <Skills />
+            <GitHubStats />
+            <Support />
+            <FooterShowcase />
+            <ProjectsGrid />
+            <p className="text-xs text-gray-500 text-center mt-12 mb-4">
+                © 2025 Steven DeLeon Labs · Built with caffeine & keyboard mashing
+            </p>
+        </div>
+    );
 }
 
 export default App;
